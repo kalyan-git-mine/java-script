@@ -84,3 +84,91 @@ try {
 } catch (err) {
     console.log("c Error:", err.message);
 }
+
+
+
+// ================================
+// 🌟 DECISION-MAKING (CONTROL FLOW)
+// ================================
+
+console.log("----- IF / ELSE IF / ELSE Example -----");
+
+let age = 20;
+
+if (age < 13) {
+  console.log("You are a child.");
+} else if (age >= 13 && age < 18) {
+  console.log("You are a teenager.");
+} else {
+  console.log("You are an adult.");
+}
+
+
+console.log("\n----- SWITCH Statement Example -----");
+
+let day = "Wednesday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the work week.");
+    break;
+  case "Wednesday":
+    console.log("Midweek day.");
+    break;
+  case "Friday":
+    console.log("End of the work week.");
+    break;
+  default:
+    console.log("It's just another day.");
+}
+
+
+console.log("\n----- TERNARY Operator Example -----");
+
+let score = 75;
+let result = score >= 50 ? "Pass" : "Fail";
+console.log("Result:", result);
+
+
+// ================================
+// 🔁 LOOPING
+// ================================
+
+console.log("\n----- FOR Loop Example (1 to 5) -----");
+
+for (let i = 1; i <= 5; i++) {
+  console.log("Number:", i);
+}
+
+
+console.log("\n----- WHILE Loop Example (Countdown from 5) -----");
+
+let count = 5;
+while (count > 0) {
+  console.log("Countdown:", count);
+  count--;
+}
+
+
+console.log("\n----- DO...WHILE Loop Example (Runs at least once) -----");
+
+let num = 0;
+do {
+  console.log("Number is:", num);
+  num++;
+} while (num < 3);
+
+
+// ================================
+// 🔄 BONUS: NESTED IF & LOOP COMBINATION
+// ================================
+
+console.log("\n----- BONUS: Loop with Conditional Inside -----");
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " is even");
+  } else {
+    console.log(i + " is odd");
+  }
+}
